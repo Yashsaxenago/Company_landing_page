@@ -1,0 +1,295 @@
+/* Common CSS */
+.container-fluid {
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar{
+    background-color: #146C94;
+    color:white;
+    
+    
+}
+
+.yash{
+    background-color: #146C94;
+   
+    padding: 15px 20px;
+    
+}
+.yash1{
+  background-color: #146C94;
+  
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: #000000;
+  border-radius: 20px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.navbar-nav {
+    margin: 0 auto;
+
+   
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+  }
+  
+  
+  .alert {
+    margin-bottom: 0;
+  }
+  
+  .carousel-wrapper {
+    flex-grow: 1;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Alert */
+  .alert {
+    background-color: #F6F1F1;
+    color: #146C94;
+    /* Add any additional styles as needed */
+  }
+  
+  .alert .btn-close {
+    color: white;
+  }
+  
+  /* Button */
+  .btn {
+    background-color: #146C94;
+    color: white;
+    
+    /* Add any additional styles as needed */
+  }
+  .btn:hover{
+    background-color: #19A7CE;
+    color: black;
+  }
+  
+  /* Video Background */
+  .video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Responsive CSS */
+  
+  /* Small devices (up to 576px) */
+  @media (max-width: 576px) {
+    .menu_list {
+      margin-right: 10px;
+    }
+  }
+  
+  /* Medium devices (between 576px and 992px) */
+  @media (min-width: 576px) and (max-width: 992px) {
+    .menu_list {
+      margin-right: 15px;
+    }
+  }
+  
+  /* Large devices (above 992px) */
+  @media (min-width: 992px) {
+    .menu {
+      justify-content: flex-start;
+    }
+  
+    .menu_list {
+      margin-right: 30px;
+    }
+  }
+  
+
+  /* card  css */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-front {
+    background-color: #f7f7f7;
+  }
+
+  .card-back {
+    background-color: #AFD3E2;
+    transform: rotateY(180deg);
+    color:black;
+   
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .rate{
+    text-align: right;
+    margin-right: 10px;
+   
+
+
+  }
+
+
+  /*  to show no of cards in front screen*/
+
+.wraper{
+  display: none;
+}
+
+  .wraper:nth-child(1){
+    display: block;
+  }
+  .wraper:nth-child(2){
+    display: block;
+  }
+  .wraper:nth-child(3){
+    display: block;
+  }
+  .wraper:nth-child(4){
+    display: block;
+  }
+  .wraper:nth-child(5){
+    display: block;
+  }
+  .wraper:nth-child(6){
+    display: block;
+  }
+
+
+
+
+ 
+  /*testimonial css*/
+
+
+
+
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #db584e;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
